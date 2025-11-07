@@ -134,6 +134,23 @@ sudo systemctl enable --now olx-bot
      ```
    - Saved to `filters.json`
 
+  <h3 style="color: red; font-weight: bold;">!!! Important Warning !!!</h3>  
+  **Mobile OLX URLs will NOT work with the bot!**
+
+  If you are using the **mobile version** of OLX.ua, the link will look like this:  
+  `https://www.m.olx.ua/uk/nedvizhimost/kvartiry/prodazha-kvartir/yuzhnoukrainsk/?currency=USD&search%5Bprivate_business%5D=private&search%5Border%5D=created_at:desc`
+
+  **Tracking will fail** if you save this URL in the bot!
+
+  **Solution:**  
+  **Remove the `m.`** from the URL **or** use the **desktop (full) version** of the site.
+
+  **Correct URL (works with the bot):**  
+ `https://www.olx.ua/uk/nedvizhimost/kvartiry/prodazha-kvartir/yuzhnoukrainsk/?currency=USD&search%5Bprivate_business%5D=private&search%5Border%5D=created_at:desc`
+
+  > **Use only full desktop URLs — no `m.` prefix!**  
+  > Otherwise, the bot will not detect new listings.
+
 3. **Manage Filters**:
    - View list under `My Filters`
    - Click filter name → see URL
